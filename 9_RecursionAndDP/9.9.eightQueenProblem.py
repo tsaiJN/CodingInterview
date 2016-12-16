@@ -15,6 +15,9 @@ def printMap(Map):
     count += 1
     print ('\n\n')
 
+# Instead of marking invalid points, we can actually check the validity
+# of the point where we are about to place a queen. Time complexity would
+# be the same but execution time should be optimized a little bit
 def MarkInvalidPoints(Map, rowIdx, columnIdx):
 
     for i in range((columnIdx+1), 8):
