@@ -1,0 +1,20 @@
+1. Dividing Up Lots of Data
+    * By Order of Appearance
+        - advantage: never using more machines than are necessary
+        - disadvantage: lookup table might be large and complex
+
+    * By Hash Value
+        the data is stored on machine #[mod(hash(key), N)] with N machines
+        - advantage: no need for a lookup table
+        - disadvantage: when one of the machine is full, we need to split or
+        shift data into other machines (which is very expensive)
+
+    * By Actual Value
+        utilize the characteristic of your data to store "similar" data on the
+        same machine so that looking up requires fewer machine hops
+
+    * Arbitrarily
+        - advantage: the simpliest way to do load balancing
+        - disadvantage: large lookup table
+
+
