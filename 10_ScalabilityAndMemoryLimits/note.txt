@@ -17,4 +17,8 @@
         - advantage: the simpliest way to do load balancing
         - disadvantage: large lookup table
 
+2. Optimization
+    When our data are divided into several machine, we can do some optimization
+    * Batch operation:
+        - batch the operation on a single machine and do it all at once
 
