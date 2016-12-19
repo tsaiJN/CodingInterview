@@ -118,6 +118,8 @@ def fDP(exp, result, start, end): # use start and end to cut expression
     cache[(start, end, result)] = count
     return count
 
+# Can further optimized with Catalan numbers, so simple
+
 if __name__ == '__main__':
     
     test_str = '1^0|0|1'
