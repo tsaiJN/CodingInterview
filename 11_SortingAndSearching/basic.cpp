@@ -2,7 +2,7 @@
 #include <vector>
 
 #define TEST_LEN 10 
-
+#define TEST_SET {3, 4, 1, 2, 7, 10, 9, 8, 5, 6}
 void printArray(int *array) {
     for (int i=0; i<10; i++) {
         std::cout << array[i] << " ";
@@ -115,12 +115,12 @@ void radixSort(int *array) {
 }
 
 void resetTestSet(int *array) {
-    int tmp[] = {3, 4, 1, 2, 7, 10, 9, 8, 5, 6};
+    int tmp[] = TEST_SET;
     std::copy(tmp, tmp+TEST_LEN, array);
 }
 
 int main() {
-    int test_set[] = {3, 4, 1, 2, 7, 10, 9, 8, 5, 6};
+    int test_set[] = TEST_SET;
 
     std::cout << "bubble sort\n";
     bubbleSort(test_set);
