@@ -3,6 +3,9 @@
 # sorted in increasing order.
 
 def search(array, target, start, end):
+    if start >= end:
+        return -1
+    
     mid = (start + end) / 2
     
     if target == array[mid]:
@@ -12,9 +15,6 @@ def search(array, target, start, end):
     if target == array[end]:
         return end
 
-    if start >= end:
-        return -1
-    
     if array[end] < array[mid]:
         # left side is normally aranged
         if target < array[mid] and target > array[start]:
