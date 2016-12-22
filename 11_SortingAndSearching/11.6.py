@@ -1,3 +1,5 @@
+# each round we can remove 1/4 of total possible position
+# time complexity would be O(log MN) [using 4/3 as base]
 def BinarySearch2D(matrix, target, startx, endx, starty, endy):
     midx = (startx + endx) / 2
     midy = (starty + endy) / 2
